@@ -1,3 +1,5 @@
-addSbtPlugin("com.typesafe.sbt" % "sbt-git"     % "0.8.4")
-addSbtPlugin("me.lessis"        % "bintray-sbt" % "0.3.0")
-resolvers += Resolver.url("bintray-eed3si9n-sbt-plugins", url("https://dl.bintray.com/eed3si9n/sbt-plugins/"))(Resolver.ivyStylePatterns)
+addSbtPlugin("com.dwijnand"          % "sbt-dynver"  % "1.1.1")
+addSbtPlugin("me.lessis"             % "bintray-sbt" % "0.3.0")
+addSbtPlugin("com.lightbend.paradox" % "sbt-paradox" % "0.2.7")
+
+libraryDependencies += "org.scala-sbt" % "scripted-plugin" % sbtVersion.value

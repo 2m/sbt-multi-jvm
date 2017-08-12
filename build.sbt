@@ -19,5 +19,6 @@ scalacOptions ++= List(
   "-encoding", "UTF-8"
 )
 
-versionWithGit
-git.baseVersion := "0.3.12"
+scriptedSettings
+scriptedLaunchOpts ++= Seq("-Xmx1024M", "-XX:MaxPermSize=256M", "-Dplugin.version=" + version.value)
+scriptedBufferLog := true
